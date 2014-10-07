@@ -1,9 +1,9 @@
 language: php
 
 php:
-  - 5.3.3
-  - 5.3
-  - 5.4
+ # - 5.3.3
+#  - 5.3
+ # - 5.4
   - 5.5
   - 5.6
   - hhvm
@@ -13,7 +13,7 @@ matrix:
     - php: hhvm
 
 before_script:
-    - sudo apt-get install parallel
+   # - sudo apt-get install parallel
     - rm -f ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini
     - composer install --prefer-source
     - bin/composer install --prefer-source
