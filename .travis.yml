@@ -13,7 +13,7 @@ matrix:
     - php: hhvm
 
 before_script:
-   # - sudo apt-get install parallel
+    - sudo apt-get install parallel
     - rm -f ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini
     - composer install --prefer-source
     - bin/composer install --prefer-source
