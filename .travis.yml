@@ -24,7 +24,7 @@ before_script:
 
 script:
     - ls -d tests/Composer/Test/* | parallel --gnu --keep-order 'echo "Running {} tests"; ./vendor/bin/phpunit -c tests/complete.phpunit.xml {};' || exit 1
-
+build_image: shippable/minv2:beta 
 
 git:
   depth: 5
